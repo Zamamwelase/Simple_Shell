@@ -53,15 +53,15 @@ typedef struct liststr
 /**
 * The structure `passinfo` is designed to hold pseudo-arguments for passing into a function, 
 facilitating a standardized prototype for a struct with function pointers.
-* `@arg`: Represents a string generated from `getline` containing arguments.
-* `@argv`: Corresponds to an array of strings created from the contents of `@arg`.
-* `@path`: Signifies a string representing the current command's path.
-* `@argc`: Denotes the count of arguments.
-* `@line_count`: Represents the count of errors.
+* `@arg`: shows a string generated from `getline` which contains arguments.
+* `@argv`: has an array of strings created from the contents of `@arg`.
+* `@path`: Shows a string which represents command's path.
+* `@argc`: shows the count of arguments.
+* `@line_count`: constitute the count of errors.
 * `@err_num`: Indicates the error code used for `exit()` calls.
 * `@linecount_flag`: If active, indicates the need to count this line of input.
-* `@fname`: Refers to the filename of the program.
-* `@env`: Represents a linked list that is a local copy of the `environ` variable.
+* `@fname`: filename of the program.
+* `@env`: shows a linked list that is a local copy of the `environ` variable.
 * `@environ`: Refers to a custom-modified copy of `environ` obtained from the linked list `env`.
 * `@history`: Points to the history node.
 * `@alias`: Points to the alias node.
@@ -69,7 +69,7 @@ facilitating a standardized prototype for a struct with function pointers.
 * `@status`: Indicates the return status of the last executed command.
 * `@cmd_buf`: Represents the address of a pointer to `cmd_buf` and is active if chaining is ongoing.
 * `@cmd_buf_type`: Represents the type of `CMD_type` (logical operators such as ||, &&, ;).
-* `@readfd`: Denotes the file descriptor from which line input should be read.
+* `@readfd`: indicate the file descriptor from which line input should be read.
 * `@histcount`: Represents the count of history line numbers.
  */
 typedef struct passinfo
